@@ -9,6 +9,13 @@ It trains on a toy corpus to learn next‑token prediction, with:
 
 ---
 
+## Demo
+
+A real training run on CPU (`python train.py --epochs 5`): the model learns the byte-level structure of the sample
+text and perplexity falls from 197.7 to 15.8 in five epochs.
+
+![Training run showing loss and perplexity falling over 5 epochs](docs/screenshots/training-run.png)
+
 ## 🚀 Features
 - Pure‑PyTorch decoder‑only architecture (no Hugging Face required)
 - Byte‑level tokenizer (works on any text)
